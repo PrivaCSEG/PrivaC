@@ -1,0 +1,96 @@
+
+/* General settings */
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  background-color: #1E1C1C;
+  color:#fff
+}
+/* Font settings */
+h1 {
+  font-size:5em;
+  letter-spacing: 0.18em;
+  font-weight: bold;
+  font-family: 'Jockey One', sans-serif;
+}
+h2{
+  font-size: 2em; 
+  font-family: 'Exo',sans-serif;
+}
+p{
+  font-size:1em;
+  font-weight: lighter;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+/* Tools */
+button {
+  height:3.7em;
+  width: 12em;
+  border-radius:1.2em;
+  background-color: #fff;
+  border:none;
+  font-size:1em;
+  font-weight: bold;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+
+/* Home page */
+.hero {
+  color: #fff;
+  text-align: center;
+  padding: 20vm;
+  padding-top: 10vh;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 10vm;
+  text-align: center;
+}
+nav{
+  text-align:center;
+  padding-top:5vh;
+}
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  display: inline-block; /* Display the blocks inline to allow horizontal arrangement */
+  width: 32vw;
+  white-space: normal; /* Allow normal text wrapping inside each block */
+  overflow: hidden; /* Hide horizontal scrollbar */
+  vertical-align: top; /* Align the tops of the blocks */
+}
+
+div.gallery:hover {
+  border: 1px solid rgb(208, 98, 98); /* Correct border property */
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
