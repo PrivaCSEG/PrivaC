@@ -34,19 +34,23 @@ button {
   font-family: 'PT Sans Caption', sans-serif;
 }
 
+.button1:hover{
+  background-color: rgb(150, 150, 150);
+  cursor: pointer;
+  color:#fff;
+}
 
 /* Home page */
 .hero {
   color: #fff;
   text-align: center;
   padding: 20vm;
-  padding-top: 10vh;
+  padding-top: 1vh;
 }
 
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding-top: 10vm;
+  padding-top: 3em;
   text-align: center;
 }
 nav{
@@ -55,7 +59,7 @@ nav{
 }
 nav li {
   display: inline;
-  margin-right: 10px;
+  margin-right: 1em;
 }
 
 nav a {
