@@ -15,10 +15,19 @@ h1 {
 }
 h2{
   font-size: 2em; 
+  letter-spacing: 0.15em;
+  line-height: 2em;
   font-family: 'Exo',sans-serif;
 }
+h3{
+font-family: 'Exo', sans-serif;
+font-weight: 3em;
+font-size: 2em;
+text-align:left;
+color: #FFFFFF;
+}
 p{
-  font-size:1em;
+  font-size:1.3em;
   font-weight: lighter;
   font-family: 'PT Sans Caption', sans-serif;
 }
@@ -44,13 +53,13 @@ button {
 .hero {
   color: #fff;
   text-align: center;
-  padding: 20vm;
-  padding-top: 1vh;
+  padding: 2vw;
+  padding-top: 3vh;
 }
 
 nav ul {
   list-style-type: none;
-  padding-top: 3em;
+  padding-top: 1vh;
   text-align: center;
 }
 nav{
@@ -97,4 +106,26 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+}
+
+.padcon {
+  padding: 5vh 8vw 5vh 8vw;
+}
+
+.banner{
+  padding-top: 10vh; 
+  padding-bottom:2vh;
+}
+
+.colrcon{
+  width: 100%; 
+  height: 100vh; 
+  background-color: #222121; 
+  position: relative; 
+  display: flex; 
+  border-radius:2%;
+}
+
+.innercon{
+  padding:2vh 6vw 2vh 6vw;
 }
