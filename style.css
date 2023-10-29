@@ -149,3 +149,29 @@ div.desc {
   order:5;
 }
 
+
+.mask {
+  cursor: none;
+  background: radial-gradient(
+    circle 30px at var(--x, 0) var(--y, 0), 
+    #1E1C1C 99%, rgb(255, 255, 255) 100%
+  ) fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.mask::before {
+  content: "";
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ffffff;
+  top:var(--y,0);
+  left:var(--x,0);
+  transform:translate(-50%,-50%);
+  z-index: -2;
+}
