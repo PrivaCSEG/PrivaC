@@ -15,4 +15,3 @@ document.body.onmousemove = function(e) {
       mask.style.setProperty('--x', '-10000px'); // Move circle out of bounds
       mask.style.setProperty('--y', '-10000px'); // Move circle out of bounds
   }
-}
