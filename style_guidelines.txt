@@ -1,0 +1,37 @@
+Overall look and feel of PrivaC 
+===============================
+The overall look and feel should be sleek and minimalistic, yet futuristic and inspiring. 
+We will avoid too much angular shapes and stick to a smoother gradient look. 
+The goal is to have a smiliar experience as browsing the website of a luxury watch brand 
+
+Colours 
+======= 
+For PrivaC, colours will not be very vibrant and barely present at all. 
+The theme is a neutral look with primarily low exposure. 
+We will use a maximum of 3 bright colours to vibrantly highlight important information and guide the user experience. 
+These are our colour swatches: 
+
+- 1E1C1C
+- 8053FF
+- FFFFFF
+- 082835
+
+Iconography 
+===========
+We will focus on using icons that have a 'flat' design to accentuate the sleep theme that resembles ai. 
+
+Typography 
+========== 
+We will be using several fonts from Google fonts: 
+- Jockey One for <h1>
+- Exo for <h2>
+- PT Sans caption for <p>
+
+Links 
+=====
+Links will not be underlined and will be displayed with a fluorescent accent colour
+Links will change colour when user hovers over it. 
+
+Buttons 
+=======
+Buttons will be flat and change colour when user hovers over it. 

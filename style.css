@@ -15,10 +15,19 @@ h1 {
 }
 h2{
   font-size: 2em; 
+  letter-spacing: 0.15em;
+  line-height: 2em;
   font-family: 'Exo',sans-serif;
 }
+h3{
+font-family: 'Exo', sans-serif;
+font-weight: bolder;
+font-size: 2em;
+color: #FFFFFF;
+}
+
 p{
-  font-size:1em;
+  font-size:1.3em;
   font-weight: lighter;
   font-family: 'PT Sans Caption', sans-serif;
 }
@@ -42,15 +51,19 @@ button {
 
 /* Home page */
 .hero {
+  flex-direction:column;
   color: #fff;
   text-align: center;
-  padding: 20vm;
-  padding-top: 1vh;
+  padding: 2vw;
+  padding-top: 3vh;
+  width:100%;
+  max-width:1050px;
+  margin:0 auto;
 }
 
 nav ul {
   list-style-type: none;
-  padding-top: 3em;
+  padding-top: 1vh;
   text-align: center;
 }
 nav{
@@ -97,4 +110,68 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+}
+
+.padcon {
+  padding: 5vh 8vw 5vh 8vw;
+}
+
+.colrcon{
+  width: 100%; 
+  height: 100vh; 
+  background-color: #222121; 
+  position: relative; 
+  display: flex; 
+  border-radius:2%;
+}
+
+.innercon{
+  padding:2vh 6vw 2vh 6vw;
+}
+
+.banner_img{
+  background: url('../PrivaC/assets/home_describackground.svg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height:32vh;
+  height: 100%;
+  z-index: -1;}
+
+.banner_container{
+  display:flex; 
+  flex-direction:column;
+  padding:2vh 15vw 2vh 12vw;
+}
+.item{
+  order:5;
+}
+
+
+.mask {
+  cursor: none;
+  background: radial-gradient(
+    circle 30px at var(--x, 0) var(--y, 0), 
+    #1E1C1C 99%, rgb(255, 255, 255) 100%
+  ) fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.mask::before {
+  content: "";
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ffffff;
+  top:var(--y,0);
+  left:var(--x,0);
+  transform:translate(-50%,-50%);
+  z-index: -2;
 }
