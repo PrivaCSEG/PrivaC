@@ -111,6 +111,24 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
+div.productbox {
+  border-radius: 3px;
+  width: 30%;
+  margin: 5em;
+}
+
+div.productbox img {
+  width: 100%;
+}
+
+div.labelbox {
+  text-align: center;
+  color: #ffffff;
+  background-color: #082835;
+  padding: 3vh 3vw 3vh 3vw;
+  /*margin: 5em;*/
+  border-radius: 3px;
+}
 
 .padcon {
   padding: 5vh 8vw 5vh 8vw;
