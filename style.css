@@ -115,6 +115,7 @@ div.productbox {
   border-radius: 3px;
   width: 30%;
   margin: 5em;
+  border-color:rgb(208, 98, 98);
 }
 
 div.productbox img {
@@ -126,7 +127,6 @@ div.labelbox {
   color: #ffffff;
   background-color: #082835;
   padding: 3vh 3vw 3vh 3vw;
-  /*margin: 5em;*/
   border-radius: 3px;
 }
 
