@@ -111,14 +111,50 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
+
+.laptopbottomart {
+  border-bottom: 60px solid #000;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height:0;
+  width:210px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.laptopscreenart {
+  width: 200px;
+  height: 120px;
+  background-color:#222121;
+  border-radius: 5px;
+  border: 5px solid #000;
+  color:#222121;
+  font-size:small;
+  margin: auto;
+}
+
+.laptopscreenart:hover {
+  width: 200px;
+  height: 120px;
+  background-color:#ccc;
+  border-radius: 5px;
+  border: 5px solid #000;
+  color:#082835;
+  font-size:small;
+  margin: auto;
+}
+
 div.productbox {
-  border-radius: 3px;
   width: 30%;
-  margin: 5em;
+  margin: 1em;
+  display: inline-block;
 }
 
 div.productbox img {
   width: 100%;
+  height: auto;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
 }
 
 div.labelbox {
@@ -127,6 +163,19 @@ div.labelbox {
   background-color: #082835;
   padding: 3vh 3vw 3vh 3vw;
   border-radius: 3px;
+  font-size:large;
+}
+
+div.labelbox:hover {
+  background-color: white;
+  color:#082835
+}
+
+div.producttext {
+  background-color: #4E4E4E;
+  padding: 15px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 
 .padcon {
