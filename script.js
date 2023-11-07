@@ -16,3 +16,13 @@ document.body.onmousemove = function(e) {
         mask.style.setProperty('--y', '-10000px'); // Move circle out of bounds
     }
   }
+
+/* FAQ show and hide */
+$(document).ready(function() {
+    $("#container li").click(function() {
+      $('#container li div').slideUp();
+      $('#container li span').text('+');
+      $(this).find('.panel').slideToggle();
+      $(this).find('span').text('-');
+    });
+  });

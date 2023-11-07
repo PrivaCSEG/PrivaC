@@ -14,60 +14,137 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
     
 
-  <style>
-     img {
-            width: 300px; /* Adjust the width as needed */
-            height: auto;
-            margin: 30px;
-            margin-left: 60px;
-            margin-right: 50px;
-           
-    }
-    figure {  
-        text-align: center;
-    }  
-  </style>
+    <style>
+      img {
+              width: 300px; /* Adjust the width as needed */
+              height: auto;
+              margin: 30px;
+              margin-left: 60px;
+              margin-right: 50px;
+      }
+      
+      figure {  
+          text-align: center;
+      }  
+      /* FAQ show and hide */
+      #container {
+        list-style: none;
+        font-family: arial;
+        font-size: 20px;
+      }
+      #container li {
+        margin: 10px;
+        border-bottom: 1px solid #ccc;
+        position: relative;
+        cursor: pointer;
+      }
+      #container h3 {
+        margin: 0;
+        font-size: 24px;
+      }
+      #container span {
+        position: absolute;
+        right: 5px;
+        top: 0;
+        color: #000;
+        font-size: 18px;
+      }
+      #container .panel {
+        margin: 5px 0;
+        display: none;
+      }
+      div.picwrapper {
+        width:100%;
+        text-align:center;
+      }
+      div.pic {
+        display:inline-block;
+      }
+    </style>
+
+  </head>
+  <body>
+    <nav>
+      <!-- Nav bar -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h1 >The Famzy <br>Team</h1>
+    <h4 >Meet the team<br>behind PrivaC!</h4>
 
 
-</head>
-<body>
-  <nav>
-    <!-- Nav bar -->
-      <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-      </ul>
-  </nav>
-  <h1 >The Famzy <br>Team</h1>
-  <h4 >Meet the team<br>behind PrivaC!</h4>
+    <div class="picwrapper">
+      <div class="pic"><img src="../PrivaC/assets/antoine.jpg" alt="antoine" width="100" height="120"> <h3 style="text-align: center; line-height: 0px;">Antoine</h3></div>
+      <div class="pic"><img src="../PrivaC/assets/sab.jpg" alt="sabrina"width="100" height="120"><h3 style="text-align: center; line-height: 0px;">Sabrina</h3></div>
+      <div class="pic"><img src="../PrivaC/assets/aws.jpg" alt="house"width="100" height="120"><h3 style="text-align: center; line-height: 0px;">Aws</h3></div>
+    <br>
+      <div class="pic"><img src="../PrivaC/assets/nicole.jpg" alt="nicole"width="100" height="120"><h3 style="text-align: center; line-height: 0px;">Nicole</h3></div>
+      <div class="pic"><img src="../PrivaC/assets/elgha.jpg" alt="elghali"width="100" height="120"><h3 style="text-align: center; line-height: 0px;">El Ghali</h3></div>
+    </div>
+    <!-- Our Mission-->
+    <h2 style="color:aliceblue"> Our Mission </h2>
+    <p style="color:aliceblue"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, architecto voluptatum omnis excepturi ipsam facilis soluta, tenetur obcaecati, ratione dignissimos veritatis voluptatem repellat laudantium consectetur in non quidem. Nulla, aspernatur.</p>
+    <br>
+    <!-- Add pictures related to "our mission sub section"-->
 
 
+    <!--FAQ-->
+    <h2 style="color:aliceblue"> FAQ </h2>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <ul id="container">
+      <li>
+        <h3>question 1</h3>
+        <span>+</span>
+        <div class="panel">
+          <p>answer 1</p>
+        </div>
+      </li>
+      <li>
+        <h3>question 2</h3>
+        <span>+</span>
+        <div class="panel">
+          <p>answer 2</p>
+        </div>
+      </li>
+      <li>
+        <h3>question 3</h3>
+        <span>+</span>
+        <div class="panel">
+          <p>answer ;3</p>
+        </div>
+      </li>
+      <li>
+        <h3>question 4</h3>
+        <span>+</span>
+        <div class="panel">
+          <p>answer 4</p>
+        </div>
+      </li>
+      <li>
+        <h3>question 5</h3>
+        <span>+</span>
+        <div class="panel">
+          <p>answer 5</p>
+        </div>
+      </li>
+    </ul>
+    
+    <script type="text/javascript"> 
+      $(document).ready(function() {
+      $("#container li").click(function() {
+        $('#container li div').slideUp();
+        $('#container li span').text('+');
+        $(this).find('.panel').slideToggle();
+        $(this).find('span').text('-');
+      });
+      });
+    </script>
 
-  <img src="../PrivaC/assets/antoine.jpg" alt="antoine" width="100" height="120">
-  <img src="../PrivaC/assets/sab.jpg" alt="sabrina"width="100" height="120">
-  <img src="../PrivaC/assets/aws.jpg" alt="house"width="100" height="120">
-  <img src="../PrivaC/assets/elgha.jpg" alt="elghali"width="100" height="120">
-  <img src="../PrivaC/assets/nico.jpg" alt="nicole"width="100" height="120">
-  <!-- Our Mission-->
-  <h2 style="color:aliceblue"> Our Mission </h2>
-  <p style="color:aliceblue"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, architecto voluptatum omnis excepturi ipsam facilis soluta, tenetur obcaecati, ratione dignissimos veritatis voluptatem repellat laudantium consectetur in non quidem. Nulla, aspernatur.</p>
-  <br>
-  <!-- Add pictures related to "our mission sub section"-->
-
-
-  <!--FAQ-->
-  <h2 style="color:aliceblue"> FAQ </h2>
-
-
-  <ol>
-    <li style="color:aliceblue"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-    <li style="color:aliceblue"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-    <li style="color:aliceblue" > Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>   
-    <li style="color:aliceblue"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-    <li style="color:aliceblue"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-  </ol>
+   
   </body>
 </html>
 
