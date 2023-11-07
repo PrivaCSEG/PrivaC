@@ -7,7 +7,82 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
+<?php
+ 
+ 
+    $faqArrays=  array(
+       array(
+            "question" => "this is question 1",
+            "answer" => "this is the answer for the first question"        
+        ),
+        array(
+            "question" => "this is question 2",
+            "answer" => "this is the answer for the 2 question"        
+        ),
+        array(
+            "question"=>"this is question 7",
+            "answer"=>"this is the answer for the 7 question"        
+        ) 
+    );        
+?>
+     
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+     
+    <script>
+     $(document).ready(function() {
+     
+        $('.faq_question').click(function() {
+            var index = $(this).index();
+            if ($(this).parent().is('.open')){
+                $('.faq_answer_container .faq_answer').fadeOut();
+                $('.faq').removeClass("open");
+            }else{
+                $('.faq_answer_container .faq_answer:eq('+index+')').fadeIn();
+                $('.faq').addClass("open");
+            }
+     
+        });
+     
+    });
+    </script>
+    <style>
+    /*FAQS*/
+    .faq_question {
+        margin: 0px;
+        padding: 0px 0px 5px 0px;
+        display: inline-block;
+        cursor: pointer;
+        font-weight: bold;
+    }
+     
+    .faq_answer_container {
+        height: 0px;
+        padding: 0px;
+    }
+     
+    .faq_answer{
+        display:none;
+    }
+    </style>
+     
+    <div class="faq_container">
+       <div class="faq"> 
+           <?php
+                foreach($faqArrays as $faqArray){
+                    echo "<div class='faq_question'><h1>$faqArray[question]</h1></div>";
+                }
+            ?>
+               <div class="faq_answer_container">
+                 <?php
+            foreach($faqArrays as $faqArray){
+     
+                echo "<div class='faq_answer'><h1>$faqArray[answer]</h1></div>";
+     
+            }
+           ;?></div>
+               </div>        
+        </div>
+     </div>
 
     <div class="hero col">
         <div class="mask">

@@ -192,3 +192,32 @@ div.labelbox {
   transform:translate(-50%,-50%);
   z-index: -2;
 }
+
+
+/* FAQ show and hide */
+#container {
+  list-style: none;
+  font-family: arial;
+  font-size: 20px;
+}
+#container li {
+  margin: 10px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  cursor: pointer;
+}
+#container h3 {
+  margin: 0;
+  font-size: 24px;
+}
+#container span {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #000;
+  font-size: 18px;
+}
+#container .panel {
+  margin: 5px 0;
+  display: none;
+}
