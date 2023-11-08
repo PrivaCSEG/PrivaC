@@ -153,8 +153,7 @@ div.productbox {
 div.productbox img {
   width: 100%;
   height: auto;
-  border-top-right-radius: 7px;
-  border-top-left-radius: 7px;
+  border-radius: 3px;
 }
 
 div.labelbox {
