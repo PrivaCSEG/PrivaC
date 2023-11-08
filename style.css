@@ -332,3 +332,55 @@ div.picwrapper {
 div.pic {
   display:inline-block;
 }
+
+/* Contacts page grids */
+.wrapper {
+  display: grid;
+  grid-template-rows: 100px 100px 40px 30px 30px 30px 40px 50px 50px 50px 50px 50px 50px;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+}
+
+.Item1 {
+grid-row-start: 2;
+grid-row-end: 3;
+grid-column-start: 3;
+grid-column-end: 9;
+
+}
+
+.Item2 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 9;
+  
+}
+
+.Item3 {
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 3;
+  grid-column-end: 9;
+  
+}
+
+.Item4 {
+  grid-row-start: 8;
+  grid-row-end: 9;
+  grid-column-start: 3;
+  grid-column-end: 9;
+  
+  }
+
+.image1 {
+  grid-row-start: 9;
+  grid-row-end: 10;
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+}
+
+.imagestyle1 {
+
+  height: 100px; width: 100px;
+}
