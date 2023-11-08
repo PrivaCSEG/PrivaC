@@ -8,7 +8,7 @@ body {
 }
 /* Font settings */
 h1 {
-  font-size:4.5em;
+  font-size:5em;
   letter-spacing: 0.18em;
   font-weight: bold;
   font-family: 'Jockey One', sans-serif;
@@ -27,7 +27,7 @@ color: #FFFFFF;
 }
 
 p{
-  font-size:1.2em;
+  font-size:1.3em;
   font-weight: lighter;
   font-family: 'PT Sans Caption', sans-serif;
 }
@@ -162,7 +162,6 @@ div.labelbox {
   flex-direction:column;
   padding:2vh 15vw 2vh 12vw;
 }
-
 .item{
   order:5;
 }
@@ -227,7 +226,7 @@ div.labelbox {
 }
 
 .responsive-image {
-  max-width: 45%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -237,4 +236,5 @@ div.labelbox {
     align-items: center; /* Center horizontally */
   }
 }
+
 
