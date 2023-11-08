@@ -287,3 +287,49 @@ div.producttext {
   }
 }
 
+img {
+  width: 300px; /* Adjust the width as needed */
+  height: auto;
+  margin: 30px;
+  margin-left: 60px;
+  margin-right: 50px;
+}
+
+figure {  
+  text-align: center;
+}  
+
+/* FAQ show and hide */
+#container {
+  list-style: none;
+  font-family: arial;
+  font-size: 20px;
+}
+#container li {
+  margin: 10px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  cursor: pointer;
+  }
+#container h3 {
+  margin: 0;
+  font-size: 24px;
+}
+#container span {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #000;
+  font-size: 18px;
+}
+#container .panel {
+  margin: 5px 0;
+  display: none;
+}
+div.picwrapper {
+  width:100%;
+  text-align:center;
+}
+div.pic {
+  display:inline-block;
+}
