@@ -336,7 +336,7 @@ div.pic {
 /* Contacts page grids */
 .wrapper {
   display: grid;
-  grid-template-rows: 100px 100px 40px 40px 30px 30px 40px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: 100px 100px 100px 40px 30px 30px 40px 50px 50px 50px 50px 50px 50px;
   grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
 }
 
@@ -370,43 +370,33 @@ grid-column-end: 9;
   grid-column-start: 3;
   grid-column-end: 9;
   
-  }
-
-.image1 {
-  grid-row-start: 9;
-  grid-row-end: 10;
-  grid-column-start: 2;
-  grid-column-end: 4;
-
 }
 
-.imagestyle1 {
-
-  height: 100px; width: 100px;
-}
-
-.image2 {
+.social {
 
   grid-row-start: 9;
   grid-row-end: 10;
   grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-end: 8;
+
+  font-size: 5em;
+  text-decoration: none;
+  
+ 
+
 }
 
-.imagestyle2 {
+.social a:link {
 
-  height: 100px; width: 100px;
+  color: black;
 }
 
-.image3 {
+.social a:visited {
 
-  grid-row-start: 8;
-  grid-row-end: 9;
-  grid-column-start: 4;
-  grid-column-end: 6;
+  color: black;
 }
 
-.imagestyle3 {
+.social a:link a:visited {
 
-  height: 200px; width: 150px;
+  text-decoration: none;
 }
