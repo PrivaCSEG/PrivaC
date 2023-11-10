@@ -12,8 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
     <!-- Paragraph font -->
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
-    
-
     <style>
       img.r {
         border-radius: 50%;
@@ -22,11 +20,26 @@
       }
       .colrcon1 {
         background-color: #222121;
-        border-radius: 2%;
+        border-radius: 25px;
         height: auto;
       }
-    </style>
+      .container {
+        display:flex ;
+        align-items: center; 
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+      }
 
+      img {
+        max-width: auto;
+        max-height:auto;
+      }
+
+      .text {
+        padding-left: 3%;
+        padding-right: 40;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -40,9 +53,6 @@
     </nav>
     <h1 style="text-align: center; line-height: 0px;">The Famzy</h1>
     <h1 style="text-align: center; line-height: 50px;">Team</h1>
-
-
-
     <div class="container">
       <div class="picwrapper">
         <div class="pic"><a href=""><img class="r" src="../PrivaC/assets/antoine.jpg" alt="antoine" width="100" height="120"></a> <h3 style="text-align: center; line-height: 0px;">Antoine</h3></div>
@@ -56,15 +66,16 @@
       <div class="colrcon1 innercon">
         <!-- Our Mission-->
         <h2 style="color:aliceblue"> Our Mission. </h2>
-        
-        <p style="padding-left: 3%; color:aliceblue"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, architecto voluptatum omnis excepturi ipsam facilis soluta, tenetur obcaecati, ratione dignissimos veritatis voluptatem repellat laudantium consectetur in non quidem. Nulla, aspernatur.</p>
-       
-      
-
-     
-        <!--FAQ-->
+        <div class="container">
+          <div class="text">
+            <p style="color:aliceblue"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, architecto voluptatum omnis excepturi ipsam facilis soluta, tenetur obcaecati, ratione dignissimos veritatis voluptatem repellat laudantium consectetur in non quidem. Nulla, aspernatur.</p>
+          </div>
+          <div class="image" style="padding-left: 5%;padding-right: 5%;">
+            <img src="../PrivaC/assets/papel.jpg">
+          </div>
+        </div>
+          <!--FAQ-->
         <h2 style="color:aliceblue"> FAQ </h2>
-    
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <ul id="container">
           <li>
@@ -116,8 +127,5 @@
       });
       });
     </script>
-
-   
   </body>
 </html>
-
