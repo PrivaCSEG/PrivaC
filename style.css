@@ -146,8 +146,8 @@ div.desc {
 
 div.productbox {
   width: 30%;
-  margin: 1em;
   display: inline-block;
+  text-align: center;
 }
 
 div.productbox img {
@@ -156,25 +156,8 @@ div.productbox img {
   border-radius: 3px;
 }
 
-div.labelbox {
-  text-align: center;
-  color: #ffffff;
-  background-color: #082835;
-  padding: 3vh 3vw 3vh 3vw;
-  border-radius: 3px;
-  font-size:large;
-}
-
-div.labelbox:hover {
-  background-color: white;
-  color:#082835
-}
-
-div.producttext {
-  background-color: #4E4E4E;
-  padding: 15px;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
+.productbox:hover {
+  width: 32%;
 }
 
 .padcon { 
