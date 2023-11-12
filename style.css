@@ -177,6 +177,7 @@ div.productbox {
   width: 30%;
   display: inline-block;
   text-align: center;
+  padding-left: 15px;
 }
 
 div.productbox img {
