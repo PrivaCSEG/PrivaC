@@ -6,10 +6,13 @@ body {
   background-color: #1E1C1C;
   color:#fff
 }
+
+
 /* Font settings */
 h1 {
   font-size:4.8em;
   letter-spacing: 0.18em;
+  line-height: 1em;
   font-weight: bold;
   font-family: 'Jockey One', sans-serif;
 }
@@ -31,11 +34,18 @@ p{
   font-weight: lighter;
   font-family: 'PT Sans Caption', sans-serif;
 }
+
+.p1{
+  font-size:1em;
+  color:#6e6e6e;
+  font-family: 'PT Sans Caption', sans-serif;
+
+}
 /* Tools */
 button {
   height:3.7em;
   width: 12em;
-  border-radius:1.2em;
+  border-radius:1em;
   background-color: #fff;
   border:none;
   font-size:1em;
@@ -191,7 +201,6 @@ div.productbox img {
 }
 
 .padcon { 
-  animation: fade-up 1s ease-in-out;
   padding: 5vh 8vw 5vh 8vw;
 }
 
@@ -203,11 +212,44 @@ div.productbox img {
   padding: 2vh 6vw;
   height: 100vh;
 }
+
+.inline{
+  display:inline-block;
+}
 .flex{
   display:flex;
+  
 }
 .innercon{ /* Padding setting for containers inside another container*/
   padding:2vh 6vw 2vh 6vw;
+  display:inline-block
+}
+.boxcon{ /* Padding setting for containers inside another container*/
+  padding:2vh 6vw 2vh 6vw;
+  /* text-align:center; */
+  width:13em;
+  margin-top: 2vh;
+  margin-right:0.6em;
+  margin-bottom:2vh;
+  border-radius: 5%;
+  display:inline-block;
+
+  
+}
+
+.boxcon:hover{
+  .p1{
+    color:#FFFFFF
+  }
+  outline: 3px solid #1E1C1C;
+  
+  
+}
+
+.smallbox{
+  display:inline-block;
+  display:flex;
+  padding:1em;
 }
 
 .banner_img{
@@ -225,6 +267,10 @@ div.productbox img {
   display:flex; 
   flex-direction:column;
   padding:2vh 15vw 2vh 12vw;
+}
+.container{
+ margin-top:5vh;
+ margin-bottom:5vh;
 }
 
 .item{
@@ -288,20 +334,24 @@ div.productbox img {
 .flex-container{
   display: flex;
   align-items: center;
+  flex-wrap:wrap;
+  justify-content: center;
 }
 
+@media(width:10000px){
 .responsive-image {
   max-width: 45%;
-  height: auto;
+}
 }
 
-@media (max-width: 768px) {
-  .colrcon {
-    flex-direction: column; /* Stack content vertically on mobile */
-    align-items: center; /* Center horizontally */
+
+@media (max-width: 1000px){
+  .side-img{
+    flex-direction:column;
+    align-items:center;
+    max-width: 80vw;
   }
 }
-
 img {
   width: 300px; /* Adjust the width as needed */
   height: auto;
@@ -446,4 +496,12 @@ grid-column-end: 9;
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+#lightgrey{
+  background-color: #222121;
+}
+
+#darkgrey{
+  background-color: #1E1C1C;
 }
