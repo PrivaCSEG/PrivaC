@@ -200,6 +200,13 @@ div.productbox img {
   width: 32%;
 }
 
+div.packagestepsimg img {
+  width: 90%;
+  height: auto;
+  padding: 2em;
+  align-items: center;
+}
+
 .padcon { 
   padding: 5vh 8vw 5vh 8vw;
 }

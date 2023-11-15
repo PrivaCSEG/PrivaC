@@ -1,14 +1,15 @@
 
-
-const cloudName = "demo";
+  
+  const cloudName = "demo";
 
 const myGallery = cloudinary.galleryWidget({
   container: "#my-gallery",
   cloudName: cloudName,
   mediaAssets: [
-    { tag: "electric_car_product_gallery_demo" }, // by default mediaType: "image"
-    { tag: "electric_car_product_gallery_demo", mediaType: "video" },
-    { tag: "electric_car_360_product_gallery_demo", mediaType: "spin" }
+    { publicId: "website gallery/PrivaC_demo_pmhtoi", mediaType: "image"}, 
+    { publicId: "aviatorglasses_ymyw4z", mediaType: "image"},
+    { publicId: "rectangleglasses_utymv2", mediaType: "image"}, 
+    { tag: "shoes_product_gallery_demo"},
   ],
   // displayProps: { mode: "expanded", columns: 2 }, // multi column display
   aspectRatio: "4:3", // if most assets are in landscape orientation
