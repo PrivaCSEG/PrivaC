@@ -19,7 +19,7 @@ const myGallery = cloudinary.galleryWidget({
   borderColor: "#ccc",  // color is transparent by default
   borderWidth: 5, // border width is 0 by default
   // transition: "fade",  // "slide" by default
-  // zoom: false,    // deactivate the zoom feature
+  zoom: false,    // deactivate the zoom feature
 });
 
 myGallery.render();
