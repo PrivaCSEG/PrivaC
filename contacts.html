@@ -12,18 +12,108 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
     <!-- Paragraph font -->
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/35dcda6463.js" crossorigin="anonymous"></script>
+    <style>
+      .container {
+        display:flex ;
+        align-items: center; 
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 25px;
+        margin: auto;
+        
+      }
+      .colrcon1 {
+        background-color: #222121;
+        border-radius: 25px;
+        height: auto;
+      }
+      textarea {
+        resize: vertical;
+      }
+  
+      input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #999999;
+        border-width: 1px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #4b4848;
+      }
+      .wrapper1 {
+        margin-right: auto; /* 1 */
+        margin-left:  auto; /* 1 */
+        
+        max-width: 960px; /* 2 */
+
+        padding-right: 10px; /* 3 */
+        padding-left:  10px; /* 3 */
+      }
+    </style>
   </head>
   <body>
-    <nav>
-      <!-- Nav bar -->
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="contacts.html">Contact</a></li>
-            <li><a href="team.html">Team</a></li>
-        </ul>
-    </nav>
 
-    <h1>hello</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </nav>
+      <div class="padcon"> 
+        <div class="colrcon1 innercon" style=" padding: 3%;">
+          <div class="container">
+            <div class="wrapper1">
+              <div class="item Item1"> <h2> CONTACT US </h2> </div>
+              <div class="item Item2"> <h3> Need to get into </h3> </div>
+              <div class="item Item3"> <h3> contact with us? </h3> </div>
+              <div class="item Item4"> <p> We'll get in touch as soon as we can. </p> </div>
+
+              <div class="item social">
+                <a href="https://twitter.com/colonelbyss" target="_blank"> <i class="fab fa-twitter"> </i> </a>
+                <a href="https://www.instagram.com/colonelby.debate/" target="_blank"> <i class="fab fa-instagram"> </i> </a>
+                <a href="https://www.facebook.com/debateOSDU/" target="_blank"> <i class="fab fa-facebook-square"> </i> </a>
+              </div>
+            </div>
+            <form class="wrapper1">
+              <div class="container" >
+                <div><label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="First name" ><br></div>
+                <div><label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Last name"></div>
+              </div>  
+              <div><label for="mail">Adresse mail:</label><br>
+              <input type="text" id="mail" name="mail" size="47%" placeholder="Adresse mail"><br></div>
+              <div><label for="subject">Subject:</label><br>
+              <input type="text" id="subject" name="subject" size="47%" placeholder="Subject"><br></div>
+              <div><label for="message">Message:</label><br>
+              <input type="text" rows="4" id="message" name="message" size="47%" placeholder="Message"><br></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+
+    
+
+
+    
+
+   <!-- <div class="ImageGrid"> 
+
+      <div class="item image1"> <img src="iglogo.png" class="imagestyle1"> </div>
+      <div class="item image2"> <img src="twitterlogo.png" class="imagestyle2"> </div>
+      <div class="item image3"> <img src="gmail.website.png" class="imagestyle3"> </div>
+
+    </div> -->
+  
+    
+
   </body>
+    
+  
 </html
