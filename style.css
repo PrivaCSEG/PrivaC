@@ -18,8 +18,9 @@ h1 {
 }
 h2{
   font-size: 2em; 
-  letter-spacing: 0.15em;
-  line-height: 2em;
+  letter-spacing: 0.1em;
+  font-weight:700;
+  line-height: 1.5em;
   font-family: 'Exo',sans-serif;
 }
 h3{
@@ -214,7 +215,7 @@ div.packagestepsimg img {
 .colrcon {
   display: flex;
   align-items: center;
-  background-color: #222121;
+  background-color: #1E1C1C;
   border-radius: 2%;
   padding: 2vh 6vw;
   height: 100vh;
@@ -236,7 +237,7 @@ div.packagestepsimg img {
   /* text-align:center; */
   width:13em;
   margin-top: 2vh;
-  margin-right:0.6em;
+  margin-right:3em;
   margin-bottom:2vh;
   border-radius: 5%;
   display:inline-block;
