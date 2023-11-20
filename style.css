@@ -206,7 +206,7 @@ div.productbox img {
 }
 
 .productbox:hover {
-  width: 32%;
+  width: 21em;
 }
 
 div.packagestepsimg img {
@@ -219,6 +219,7 @@ div.packagestepsimg img {
 
 .padcon { 
   padding: 5vh 8vw 5vh 8vw;
+  text-wrap:wrap ;
 }
 
 .colrcon {
