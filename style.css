@@ -187,7 +187,7 @@ div.productbox {
   width: 30%;
   display: inline-block;
   text-align: center;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 
 div.productbox img {
@@ -196,8 +196,8 @@ div.productbox img {
   border-radius: 3px;
 }
 
-.productbox:hover {
-  width: 32%;
+.productbox img:hover {
+  outline: #d9d9d9 solid 0.5em;
 }
 
 div.packagestepsimg img {
