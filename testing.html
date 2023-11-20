@@ -4,31 +4,30 @@
   </head>
   <body>
     <h3>Product Gallery Example</h3>
-    <script
-      src="https://product-gallery.cloudinary.com/all.js"
-      type="text/javascript">
+    <script>
+    const myWidget = cloudinary.galleryWidget({
+      "cloudName": "ddu1b3wqq",
+      "mediaAssets": [{
+          "publicId": "aviatorglasses_ymyw4z",
+          "mediaType": "image"
+      }, {
+          "publicId": "purple_wallpapper_fbj2r3",
+          "mediaType": "image"
+      }, {
+          "publicId": "rectangleglasses_utymv2",
+          "mediaType": "image"
+      }, {
+          "publicId": "roundglasses_tnojxn",
+          "mediaType": "image"
+      }, {
+          "publicId": "website gallery/PrivaC_demo_pmhtoi",
+          "mediaType": "image"
+      }],
+      "container": "#my-gallery"
+  });
+  myWidget.render();
     </script>
 
-    <script
-      src="gallery_widget.js"
-      type="text/javascript">
-    </script>
-
-    <div id="my-gallery" style="max-width: 80%; margin: auto;"></div>
-
-    <p>
-      <a
-        href="https://cloudinary.com/documentation/product_gallery"
-        target="_blank">
-        Product Gallery User Guide
-      </a>
-    </p>
-    <p>
-      <a
-        href="https://cloudinary.com/documentation/product_gallery_reference"
-        target="_blank">
-        Product Gallery Reference
-      </a>
-    </p>
+    
   </body>
 </html>
