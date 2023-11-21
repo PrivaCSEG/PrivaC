@@ -60,6 +60,23 @@ button {
   color:#fff;
 }
 
+.button2{
+  height:2em;
+  width: 7em;
+  border-radius:0.5em;
+  background-color: #000000;
+  color: #fff;
+  border:none;
+  font-size:0.8em;
+  font-weight: bold;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+.button2:hover{
+  background-color: #8053FF;
+  cursor: pointer;
+  color:#fff;
+}
+
 /* Home page */
 .hero {
   flex-direction:column;

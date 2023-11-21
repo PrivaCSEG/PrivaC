@@ -24,7 +24,6 @@
         
       }
       .colrcon1 {
-        background-color: #222121;
         border-radius: 25px;
         height: auto;
       }
@@ -37,11 +36,11 @@
         padding: 12px 20px;
         margin: 8px 0;
         display: inline-block;
-        border: 1px solid #999999;
+        border: 7px solid #000000;
         border-width: 1px;
         border-radius: 5px;
         box-sizing: border-box;
-        background-color: #4b4848;
+        background-color: #ffffff;
       }
       .wrapper1 {
         margin-right: auto; /* 1 */
@@ -54,45 +53,49 @@
       }
     </style>
   </head>
-  <body>
+  <body style="background-color: white;color: black;">
 
       <nav>
         <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="contacts.html">Contact</a></li>
-          <li><a href="team.html">Team</a></li>
+          <li><a href="home.html" style="color: #000000;">Home</a></li>
+          <li><a href="products.html"style="color: #000000;">Products</a></li>
+          <li><a href="contacts.html"style="color: #000000;">Contact</a></li>
+          <li><a href="team.html"style="color: #000000;">Team</a></li>
         </ul>
       </nav>
-      <div class="padcon"> 
-        <div class="colrcon1 innercon" style=" padding: 3%;">
+      <div class="padcon" style="text-align: center;"> 
+        <div class="colrcon1 innercon" style=" padding: 3%; text-align:left">
           <div class="container">
             <div class="wrapper1">
-              <div class="item Item1"> <h2> CONTACT US </h2> </div>
-              <div class="item Item2"> <h3> Need to get into </h3> </div>
-              <div class="item Item3"> <h3> contact with us? </h3> </div>
+              <div class="item Item1"> <h1> CONTACT US </h2> </div>
+                <h2>Need to get into touch with us?</h2>
+              <p style="max-width:40vw">Either fill out the form with your inquiry or find contact us by our email.</p>
               <div class="item Item4"> <p> We'll get in touch as soon as we can. </p> </div>
 
               <div class="item social">
-                <a href="https://twitter.com"> <i class="fab fa-twitter"> </i> </a>
-                <a href="https://www.instagram.com" target="_blank"> <i class="fab fa-instagram"> </i> </a>
-                <a href="https://www.facebook.com" target="_blank"> <i class="fab fa-facebook-square"> </i> </a>
+                <a href="https://twitter.com" style="text-decoration:#ffffff"target="_blank"> <i class="fab fa-twitter"> </i> </a>
+                <a href="https://www.instagram.com" style="text-decoration:#ffffff" target="_blank"> <i class="fab fa-instagram"> </i> </a>
+                <a href="https://www.facebook.com" style="text-decoration:#ffffff" target="_blank"> <i class="fab fa-facebook-square"> </i> </a>
               </div>
             </div>
             <form class="wrapper1">
               <div class="container" >
-                <div><label for="fname">First name:</label><br>
+                <div><label for="fname">First name <span style="color: red;">*</span></label><br>
                 <input type="text" id="fname" name="fname" placeholder="First name" ><br></div>
-                <div><label for="lname">Last name:</label><br>
+                <div><label for="lname">Last name</label><br>
                 <input type="text" id="lname" name="lname" placeholder="Last name"></div>
               </div>  
-              <div><label for="mail">Adresse mail:</label><br>
+              <div><label for="mail">Adresse mail</label><br>
               <input type="text" id="mail" name="mail" size="47%" placeholder="Adresse mail"><br></div>
-              <div><label for="subject">Subject:</label><br>
+              <div><label for="subject">Subject</label><br>
               <input type="text" id="subject" name="subject" size="47%" placeholder="Subject"><br></div>
-              <div><label for="message">Message:</label><br>
+              <div><label for="message">Message</label><br>
               <input type="text" rows="4" id="message" name="message" size="47%" placeholder="Message"><br></div>
-              <li><a href="submit.html">submit</a></li>
+              <a href="submit.html" width="100%">
+                <button class="button button2" type="button">
+                  Submit
+                </button>
+              </a>
             </form>
           </div>
         </div>
@@ -100,6 +103,29 @@
     
 
   </body>
+  <footer>
+    <div class="footer">
+    <div class="row">
     
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="contacts.html">Contact us</a></li>
+    <li><a href="#">Our Services</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms & Conditions</a></li>
+    </ul>
+    </div>
+    
+    <div class="row">
+    PRIVAC Copyright © 2023 PRIVAC - All rights reserved || Designed By: Famzy 
+    </div>
+    </div>
+    </footer>  
   
 </html
