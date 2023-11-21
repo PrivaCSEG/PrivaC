@@ -484,6 +484,30 @@ grid-column-end: 9;
   text-decoration: none;
 }
 
+.NewGrids {
+
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+}
+
+.Item5 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  
+  }
+
+  .Item6 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    
+    }
+
+
 @keyframes fade-in {
   from {
     opacity: 0;
