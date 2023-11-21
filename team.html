@@ -30,19 +30,32 @@
         column-gap: 5px;
       }
 
-      img {
-        max-width: auto;
-        max-height:auto;
+      img.e {
+        width: 450;
+        height: fit-content;
+        margin: 30px;
+        margin-left: 60px;
+        margin-right: 50px;
       }
+      
 
       .text {
         padding-left: 3%;
-        padding-right: 40;
+        padding-right: 3%;
+      }
+      .techteam_img{
+        background: url('../PrivaC/assets/New Project.png');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+        min-height: 85vh;
+        flex-direction: column;
       }
     </style>
   </head>
-  <body>
-    <div style="background-image: ../PrivaC/assets/Startup-tech-team2-800x400.png">
+  <body style="background-color: black;">
+    <div class="techteam_img">
       <header>
         <nav>
           <ul>
@@ -52,8 +65,12 @@
             <li><a href="team.html">Team</a></li>
           </ul>
         </nav> 
-        <h1 style="text-align: center; line-height: 0px;">The Famzy</h1>
-        <h1 style="text-align: center; line-height: 50px;">Team</h1>
+        <div class="padcon">
+          <div style="font-weight:100; padding: 50px; height: 15%; width: 50vw;" >
+            <h1 style="margin-bottom:0%; margin-top:0%">The Famzy Team</h1>
+            <p style="font-style: italic;color: blueviolet;">Meet the people behind Famzy</p>
+          </div>
+        </div>
       </header>  
       <div class="container">
         <div class="picwrapper">
@@ -74,7 +91,7 @@
             <h3 style="color:aliceblue">At PrivaC, we're on a mission to redefine privacy. Through innovative technology like our C-Specs and G-Screens, we aim to empower individuals and businesses, ensuring their personal space remains their own in the digital world. PrivaC: Redefining Privacy, Empowering You.</h3>
           </div>
           <div class="image" style="padding-left: 5%;padding-right: 5%;">
-            <img src="../PrivaC/assets/papel.jpg">
+            <img class="e" src="../PrivaC/assets/happyprojectteam-1536x1024.jpg" >
           </div>
         </div>
           <!--FAQ-->
