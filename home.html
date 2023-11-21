@@ -15,6 +15,26 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
 </head>
 <body>
+  <script>
+    var countDownDate = new Date("December 5, 2023 15:37:25").getTime();  
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+    
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
   
    <div id="page-container">
     <div class="hero_img">
@@ -53,7 +73,7 @@
 
   <main>
     <div class="padcon" style="background-color: #080808; ">
-      <h1 style="font-size: 3.4em;">PrivaC's <span style="color: #8053FF;">C-Specs</span> is your one step towards Digital Privacy in the real world. <br><br>Install our G-Screen to any screen you wish to pair</h1>
+      <h1 style="font-size: 3.4em;">PrivaC's <span style="color: #8053FF;">C-Specs</span> is your one step towards Digital Privacy in the real world. <br><br>Simply install our <span style="color: #8053FF;">G-Screen</span> to any screen you wish to pair, it's as easy as that.</h1>
     </div>
     <!-- How things work -->
     <div style="background-color: #080808; padding-top:2%; padding-bottom:1%; margin-bottom:0%"  >
@@ -117,7 +137,7 @@
       </div>
     </div>
     <!-- Testimonies  -->
-    <div class="padcon flex-container">
+    <div class="padcon flex-container" style="padding-top:4em">
       <div style="margin-bottom:0%">
         <h1 style="font-size: 3em;">Our Clients Say</h1>
       </div>
@@ -128,15 +148,46 @@
       </div>
     </div>
     <!-- Our team -->
-    <div class="padcon flex-container">
-      <div class="padcon flex-container">
-        <h1>The Team</h1>
+    <div class="flex"style="margin-top:4em; ">
+      <div class="" style="padding-left:10em; padding-right:5em; background-color: #000000;">
+        <h1 style="font-size:3em;">The Team</h1>
+        <p style="font-style:italic;color: rgb(255, 255, 255);">Introducing Famzy, a dynamic and visionary team at the forefront of privacy innovation. </p>
+        <a href="team.html" width="100%">
+          <button class="button button1" type="button">
+           More about us!
+          </button>
+        </a>
       </div>
-      <div class="padcon flex-container">
-        
+      <div class="">
+        <img src="assets/We are Famzy!.png" alt="" width="100%" style="margin:0%; width:60em">
       </div>
     </div>
     <!-- Upcoming  -->
+    <div class="flex padcon">
+      <div>
+        <h1 style="font-size:4em;">Launching Soon</h1>
+        <div class="flex">
+          <div>
+            <img src="assets/sunglasses_demo.webp" class="responsive-image" style="margin-top:0%; margin-bottom:0%;margin-left:0%; border-radius:3%; width:33em; max-height: 60vh;" alt="">
+          </div>
+          <div>
+            <h2 style="margin:0%;">Hold on tight! Sun-Specs are coming! <br><span style="color:#8053FF;">Redefining digital Privacy under the Sun</span></h2>
+            <p style="font-style:italic;color: rgb(126, 126, 126);">These aren't just sunglasses; they're a blend of style and cutting-edge privacy technology. Get ready to elevate your look while safeguarding your privacy. The revolution is about to unfold. Coming soon! </p>
+            <p id="demo"stlye="margin:0%;"></p>
+            <a href="" width="100%">
+              <button class="button button1" type="button">
+               Remind me
+              </button>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+     
+
+      
+      
+    </div>
     </main>
   </div>
   <script src="script.js"></script>
@@ -144,4 +195,27 @@
     <!-- Header section -->
      
 </body>
+<footer>
+  <div class="footer">
+  <div class="row">
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+  <a href="#"><i class="fa fa-youtube"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  </div>
+  
+  <div class="row">
+  <ul>
+  <li><a href="#">Contact us</a></li>
+  <li><a href="#">Our Services</a></li>
+  <li><a href="#">Privacy Policy</a></li>
+  <li><a href="#">Terms & Conditions</a></li>
+  </ul>
+  </div>
+  
+  <div class="row">
+  PRIVAC Copyright © 2023 PRIVAC - All rights reserved || Designed By: Famzy 
+  </div>
+  </div>
+  </footer>  
 </html>

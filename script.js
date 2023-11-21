@@ -54,3 +54,4 @@ $(document).ready(function() {
   window.addEventListener("scroll", reveal);
   window.addEventListener("load", reveal); // Trigger the reveal function on page load
   
+  
